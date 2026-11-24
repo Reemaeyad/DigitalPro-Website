@@ -45,7 +45,7 @@ To run the project locally:
 1. Clone the repository:
 
    bash
-   git clone https://github.com/Reemaeyad/Digital-Pro-Website.git
+   git clone https://github.com/Reemaeyad/DigitalPro-Website.git
    
 
 2. Open the project folder:
