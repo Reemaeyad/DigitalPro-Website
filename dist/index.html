@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DigitalPro | Marketing Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { primary: '#2563EB', secondary: '#8B5CF6', ink: '#111827', body: '#475569', soft: '#F8FAFC', success: '#22C55E' },
+      fontFamily: { sans: ['Inter', 'Segoe UI', 'system-ui', 'sans-serif'] }
+    } } };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-sans text-body bg-white antialiased overflow-x-hidden">
+
+  <!-- Fixed Header -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 bg-white shadow-sm transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-5 lg:px-10 h-[72px] lg:h-[88px] flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="text-2xl lg:text-4xl font-bold text-primary tracking-tight">DigitalPro</span>
+        <span class="hidden sm:inline-block text-xs text-primary bg-blue-100 rounded-full px-3 py-1.5">Marketing Agency</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-10 text-[17px] text-ink" aria-label="Main">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#work" class="nav-link">Our Work</a>
+        <a href="#team" class="nav-link">Our Team</a>
+        <a href="#contact" class="nav-link">Contact Us</a>
+      </nav>
+
+      <a href="#contact" class="hidden lg:inline-block bg-primary text-white text-lg px-7 py-3 rounded-lg shadow-md shadow-blue-600/20 hover:bg-blue-700 hover:-translate-y-0.5 transition">Get a Consultation</a>
+
+      <button id="menu-btn" class="lg:hidden p-2 rounded-lg text-ink hover:bg-slate-100" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-5 pb-5">
+      <nav class="flex flex-col py-2 text-ink text-lg" aria-label="Mobile">
+        <a href="#home" class="mobile-link py-3">Home</a>
+        <a href="#services" class="mobile-link py-3">Services</a>
+        <a href="#work" class="mobile-link py-3">Our Work</a>
+        <a href="#team" class="mobile-link py-3">Our Team</a>
+        <a href="#contact" class="mobile-link py-3">Contact Us</a>
+      </nav>
+      <a href="#contact" class="mobile-link block text-center bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">Get a Consultation</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero-bg pt-[72px] lg:pt-[88px] min-h-screen flex items-center">
+      <div class="max-w-7xl mx-auto w-full px-5 lg:px-10 py-12 lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        <!-- Text -->
+        <div>
+          <h1 class="text-5xl sm:text-6xl xl:text-7xl font-extrabold leading-[1.1] tracking-tight text-ink">
+            We Create <span class="text-primary">Digital Success</span> for Your Brand
+          </h1>
+          <p class="mt-8 text-lg lg:text-xl leading-relaxed text-body max-w-xl">
+            We provide integrated marketing solutions that help your company grow and increase sales through innovative strategies.
+          </p>
+
+          <ul class="mt-8 flex flex-wrap gap-x-8 gap-y-4">
+            <li class="flex items-center gap-3"><span class="check"><i data-lucide="check" class="w-4 h-4"></i></span>10+ Years Experience</li>
+            <li class="flex items-center gap-3"><span class="check"><i data-lucide="check" class="w-4 h-4"></i></span>+500 Clients</li>
+            <li class="flex items-center gap-3"><span class="check"><i data-lucide="check" class="w-4 h-4"></i></span>Professional Team</li>
+          </ul>
+
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="#contact" class="inline-flex justify-center items-center bg-primary text-white text-lg font-medium px-10 py-5 rounded-xl shadow-lg shadow-blue-600/25 hover:bg-blue-700 hover:-translate-y-0.5 transition">Start Your Journey Now</a>
+            <button id="video-btn" type="button" class="inline-flex justify-center items-center gap-3 bg-white text-ink text-lg font-medium px-10 py-5 rounded-xl border-2 border-slate-200 hover:border-primary hover:text-primary hover:-translate-y-0.5 transition">
+              <i data-lucide="play" class="w-5 h-5 fill-current"></i>Watch the Video
+            </button>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="relative pb-8 lg:pb-10 lg:pl-0">
+          <div class="relative aspect-[4/3] sm:aspect-[75/48] rounded-3xl bg-gradient-to-br from-blue-400 via-indigo-400 to-purple-400 shadow-2xl shadow-indigo-500/25 overflow-hidden">
+            <span class="absolute top-[10%] right-[8%] w-[13%] aspect-square rounded-full bg-white/25"></span>
+            <span class="absolute bottom-[-6%] left-[6%] w-[21%] aspect-square rounded-full bg-white/20"></span>
+            <span class="absolute top-[45%] left-[48%] w-[6%] aspect-square rounded-full bg-white/10"></span>
+            <svg class="absolute inset-0 m-auto w-[17%] text-white/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m19 9-5 5-4-4-3 3"/>
+            </svg>
+          </div>
+
+          <div class="absolute left-0 sm:-left-6 bottom-0 flex items-center gap-4 bg-white rounded-2xl shadow-xl shadow-slate-300/50 px-5 py-4">
+            <span class="w-14 h-14 rounded-full bg-green-100 text-success flex items-center justify-center"><i data-lucide="users" class="w-7 h-7"></i></span>
+            <div>
+              <p class="text-sm text-body">Happy Clients</p>
+              <p class="text-2xl font-bold text-ink">+500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder sections so navigation links work -->
+    <section id="services" class="section-pad bg-white">
+      <div class="max-w-7xl mx-auto px-5 lg:px-10">
+        <div class="text-center">
+          <h2 class="text-4xl lg:text-5xl font-bold tracking-tight text-ink reveal">Our Integrated Services</h2>
+          <p class="mt-5 text-lg lg:text-xl text-body reveal" style="--d:80ms">We offer a comprehensive range of digital solutions to grow your business.</p>
+          <div class="mx-auto mt-6 h-1 w-[120px] rounded-full bg-primary reveal" style="--d:140ms"></div>
+        </div>
+
+        <div class="mt-14 lg:mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-stretch">
+        <article class="service-card reveal" style="--d:0ms">
+          <div class="icon-box icon-blue"><i data-lucide="chart-line" class="w-8 h-8"></i></div>
+          <h3 class="mt-8 text-2xl lg:text-[28px] leading-snug font-bold text-ink">Search Engine Optimization</h3>
+          <p class="mt-4 text-lg leading-relaxed text-body">We ensure your website appears on the first pages of search engines and increases qualified visitors.</p>
+          <ul class="mt-6 space-y-3 text-[17px] text-body">
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Keyword Analysis</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Content Optimization</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Link Building</li>
+          </ul>
+        </article>
+        <article class="service-card reveal" style="--d:120ms">
+          <div class="icon-box icon-purple"><svg viewBox="0 0 24 24" class="w-8 h-8" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></div>
+          <h3 class="mt-8 text-2xl lg:text-[28px] leading-snug font-bold text-ink">Social Media Marketing</h3>
+          <p class="mt-4 text-lg leading-relaxed text-body">We manage your advertising campaigns on Facebook and Instagram with high professionalism.</p>
+          <ul class="mt-6 space-y-3 text-[17px] text-body">
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Precise Targeting</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Results Analysis</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Campaign Optimization</li>
+          </ul>
+        </article>
+        <article class="service-card reveal" style="--d:240ms">
+          <div class="icon-box icon-green"><i data-lucide="code-xml" class="w-8 h-8"></i></div>
+          <h3 class="mt-8 text-2xl lg:text-[28px] leading-snug font-bold text-ink">Website Design &amp; Development</h3>
+          <p class="mt-4 text-lg leading-relaxed text-body">We design professional websites that are compatible with all devices.</p>
+          <ul class="mt-6 space-y-3 text-[17px] text-body">
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Responsive Design</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>High Speed</li>
+            <li class="flex items-center gap-3"><i data-lucide="check" class="w-5 h-5 text-success shrink-0"></i>Easy Management</li>
+          </ul>
+        </article>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="section-pad">
+      <div class="max-w-7xl mx-auto px-5 lg:px-10">
+        <h2 class="text-3xl lg:text-4xl font-bold text-ink">Our Work</h2>
+        <p class="mt-3 max-w-2xl">Selected campaigns and results will appear here.</p>
+      </div>
+    </section>
+    <div id="team">
+      <!-- SVG symbol reused by all team cards -->
+      <svg width="0" height="0" class="absolute" aria-hidden="true">
+        <symbol id="user-icon" viewBox="0 0 82 82">
+          <circle cx="41" cy="41" r="41" fill="#fff"/>
+          <circle cx="41" cy="31" r="11" fill="currentColor"/>
+          <ellipse cx="41" cy="55" rx="17" ry="8.5" fill="currentColor"/>
+        </symbol>
+      </svg>
+
+      <!-- Statistics banner -->
+      <section class="relative overflow-hidden text-white bg-gradient-to-r from-[#2563EB] to-[#9333EA] py-12 md:py-0 md:h-[222px] flex items-center" aria-label="Statistics">
+        <span class="absolute -left-[108px] -top-[108px] w-[216px] h-[216px] rounded-full bg-white/10" aria-hidden="true"></span>
+        <span class="absolute -right-[170px] -bottom-[170px] w-[340px] h-[340px] rounded-full bg-white/10" aria-hidden="true"></span>
+        <div class="relative w-full max-w-5xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-4">
+          <div class="text-center">
+            <p class="text-4xl md:text-5xl font-bold leading-none">+500</p>
+            <p class="mt-2 text-sm md:text-base">Clients Worldwide</p>
+          </div>
+          <div class="text-center">
+            <p class="text-4xl md:text-5xl font-bold leading-none">+1000</p>
+            <p class="mt-2 text-sm md:text-base">Projects Completed</p>
+          </div>
+          <div class="text-center">
+            <p class="text-4xl md:text-5xl font-bold leading-none">+50</p>
+            <p class="mt-2 text-sm md:text-base">Marketing Experts</p>
+          </div>
+          <div class="text-center">
+            <p class="text-4xl md:text-5xl font-bold leading-none">+10</p>
+            <p class="mt-2 text-sm md:text-base">Years of Experience</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Creative team -->
+      <section class="bg-soft py-16 lg:py-20" aria-labelledby="team-title">
+        <div class="max-w-[1305px] mx-auto px-5">
+          <div class="text-center">
+            <h2 id="team-title" class="text-2xl md:text-3xl font-bold text-ink">Our Creative Team</h2>
+            <p class="mt-3 text-base text-body">An elite group of the best digital marketing experts.</p>
+          </div>
+          <div class="mt-12 lg:mt-16 grid gap-7 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 max-w-[640px] md:max-w-none mx-auto">
+          <article class="bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(15,23,42,0.08)]">
+            <div class="h-[219px] flex items-center justify-center bg-gradient-to-br from-[#60A5FA] to-[#C084FC]">
+              <svg class="w-[82px] h-[82px]" style="color:#8B5CF6" viewBox="0 0 82 82" role="img" aria-label="Ahmed Mohamed profile icon"><use href="#user-icon"/></svg>
+            </div>
+            <div class="px-4 py-5 text-center">
+              <h3 class="text-[17px] font-bold text-black">Ahmed Mohamed</h3>
+              <p class="mt-1 text-[13px]" style="color:#2563EB">Marketing Director</p>
+              <p class="mt-3 text-xs text-body">10 years of experience in digital marketing</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(15,23,42,0.08)]">
+            <div class="h-[219px] flex items-center justify-center bg-gradient-to-br from-[#C084FC] to-[#F472B6]">
+              <svg class="w-[82px] h-[82px]" style="color:#D946EF" viewBox="0 0 82 82" role="img" aria-label="Sara Ahmed profile icon"><use href="#user-icon"/></svg>
+            </div>
+            <div class="px-4 py-5 text-center">
+              <h3 class="text-[17px] font-bold text-black">Sara Ahmed</h3>
+              <p class="mt-1 text-[13px]" style="color:#9333EA">SEO Specialist</p>
+              <p class="mt-3 text-xs text-body">Specialized in search engine optimization</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(15,23,42,0.08)]">
+            <div class="h-[219px] flex items-center justify-center bg-gradient-to-br from-[#4ADE80] to-[#60A5FA]">
+              <svg class="w-[82px] h-[82px]" style="color:#2DB5B0" viewBox="0 0 82 82" role="img" aria-label="Mohamed Ali profile icon"><use href="#user-icon"/></svg>
+            </div>
+            <div class="px-4 py-5 text-center">
+              <h3 class="text-[17px] font-bold text-black">Mohamed Ali</h3>
+              <p class="mt-1 text-[13px]" style="color:#16A34A">Web Developer</p>
+              <p class="mt-3 text-xs text-body">Expert in web development</p>
+            </div>
+          </article>
+          <article class="bg-white rounded-[20px] overflow-hidden shadow-[0_4px_20px_rgba(15,23,42,0.08)]">
+            <div class="h-[219px] flex items-center justify-center bg-gradient-to-br from-[#FACC15] to-[#FB923C]">
+              <svg class="w-[82px] h-[82px]" style="color:#F59E0B" viewBox="0 0 82 82" role="img" aria-label="Noura Khaled profile icon"><use href="#user-icon"/></svg>
+            </div>
+            <div class="px-4 py-5 text-center">
+              <h3 class="text-[17px] font-bold text-black">Noura Khaled</h3>
+              <p class="mt-1 text-[13px]" style="color:#CA8A04">Graphic Designer</p>
+              <p class="mt-3 text-xs text-body">Specialized in visual identity design</p>
+            </div>
+          </article>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="contact" class="bg-[#111827] text-white">
+      <div class="max-w-[1308px] mx-auto px-5 pt-14 pb-14">
+        <div class="grid gap-10 lg:grid-cols-2 lg:gap-[41px] items-start">
+
+          <!-- Contact form -->
+          <div class="bg-[#1F2937] rounded-3xl p-6 sm:p-7">
+            <h2 class="text-2xl font-bold">Contact Us</h2>
+            <form id="contact-form" class="mt-7 space-y-5" novalidate>
+              <input type="text" name="name" placeholder="Full Name" aria-label="Full Name" autocomplete="name" required class="w-full rounded-lg bg-[#374151] border border-slate-600/60 px-4 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition h-[51px]" />
+              <input type="email" name="email" placeholder="Email Address" aria-label="Email Address" autocomplete="email" required class="w-full rounded-lg bg-[#374151] border border-slate-600/60 px-4 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition h-[51px]" />
+              <textarea name="message" rows="5" placeholder="Your message..." aria-label="Your message" required class="w-full rounded-lg bg-[#374151] border border-slate-600/60 px-4 text-sm text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition py-3.5 h-[134px] resize-y"></textarea>
+              <button type="submit" class="w-full h-[49px] rounded-lg bg-primary text-sm font-semibold text-white hover:bg-blue-700 active:scale-[.99] transition">Send Message</button>
+              <p id="form-status" class="text-sm min-h-[1.25rem]" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <!-- Contact information -->
+          <div>
+            <h2 class="text-2xl font-bold lg:pt-0">Contact Information</h2>
+            <ul class="mt-7 space-y-3.5">
+            <li class="flex items-center gap-3.5">
+              <span class="w-[42px] h-[42px] rounded-lg bg-blue-900/50 text-blue-500 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-[18px] h-[18px]"></i></span>
+              <div>
+                <p class="text-xs text-slate-400">Address</p>
+                <p class="text-sm text-white">Cairo, Egypt</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3.5">
+              <span class="w-[42px] h-[42px] rounded-lg bg-blue-900/50 text-blue-500 flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-[18px] h-[18px]"></i></span>
+              <div>
+                <p class="text-xs text-slate-400">Phone</p>
+                <p class="text-sm text-white">+20 123 456 7890</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3.5">
+              <span class="w-[42px] h-[42px] rounded-lg bg-blue-900/50 text-blue-500 flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-[18px] h-[18px]"></i></span>
+              <div>
+                <p class="text-xs text-slate-400">Email</p>
+                <p class="text-sm text-white">info@digitalpro.com</p>
+              </div>
+            </li>
+            </ul>
+            <div class="mt-7 h-[167px] rounded-2xl bg-gradient-to-br from-[#1E3A8A] to-[#581C87] flex items-center justify-center gap-2 text-slate-300/70">
+              <i data-lucide="map" class="w-7 h-7"></i><span class="text-sm">Site Map</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="border-t border-slate-800">
+        <div class="max-w-[1308px] mx-auto px-5 py-8 flex flex-col-reverse items-center gap-5 sm:flex-row sm:justify-between">
+          <p class="text-xs text-slate-300">&copy; <span id="year">2024</span> DigitalPro. All rights reserved.</p>
+          <div class="flex items-center gap-5">
+            <a href="#" class="text-slate-400 hover:text-white transition" aria-label="Facebook"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg></a>
+            <a href="#" class="text-slate-400 hover:text-white transition" aria-label="Twitter"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="#" class="text-slate-400 hover:text-white transition" aria-label="LinkedIn"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M4 9h4v11H4zM6 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.5 0 4.4 2.2 4.4 5.2V20h-4v-5.4c0-1.3 0-2.9-1.8-2.9s-2.2 1.4-2.2 2.8V20h-4z"/></svg></a>
+            <a href="#" class="text-slate-400 hover:text-white transition" aria-label="Instagram"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Video Modal -->
+  <div id="video-modal" class="hidden fixed inset-0 z-[60] items-center justify-center p-4 bg-slate-900/80" role="dialog" aria-modal="true" aria-label="Video">
+    <div class="relative w-full max-w-3xl">
+      <button id="video-close" type="button" class="absolute -top-12 right-0 text-white p-2 hover:text-slate-300" aria-label="Close video">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+      <div class="aspect-video rounded-2xl overflow-hidden bg-black shadow-2xl">
+        <iframe id="video-frame" class="w-full h-full" src="" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" title="DigitalPro video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+</body>
+</html>
